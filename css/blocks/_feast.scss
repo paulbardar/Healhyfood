@@ -1,0 +1,17 @@
+.feast {
+  padding: 270px 0 282px;
+  text-align: center;
+  background: $feastbg url('../img/feast.jpg') no-repeat 50% 50%;
+  background-size: cover;
+
+  &__title {
+    color: #ffffff;
+    font-family: $fontPrimary;
+    letter-spacing: 5.35px;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 69px;
+    background: url('../img/feast_decor.png') no-repeat bottom;
+  }
+}

@@ -1,0 +1,27 @@
+@mixin menu-item-style {
+  font-size: 25px;
+  line-height: 1.83;
+  letter-spacing: 1.5px;
+}
+
+@mixin sup-title-style {
+  font-size: 29px;
+  letter-spacing: 1.75px;
+  line-height: 1.57;
+  font-weight: bold;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+@mixin h3-title-style {
+  letter-spacing: 3.75px;
+  line-height: 1.4;
+  color: $titleColor;
+}
+
+@mixin contacts-icon-location {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

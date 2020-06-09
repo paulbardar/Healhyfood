@@ -1,0 +1,127 @@
+@media screen and (max-width: $screen-medium) {
+  .grid-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header {
+    .menu {
+      display: none;
+    }
+  }
+  .hero__phone {
+    justify-content: center;
+  }
+
+  .hero {
+    &:after {
+      display: none;
+    }
+  }
+  .hero-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    &:after {
+      display: none;
+    }
+
+    &__title {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  .logo {
+    width: 120px;
+  }
+
+  .our-story {
+    &__title {
+      &:after {
+        right: 4%;
+        bottom: -26%;
+        z-index: -1;
+      }
+    }
+  }
+
+  .events {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__content {
+      padding-left: 10px;
+      &:before {
+        right: 0;
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .reservation {
+    padding-left: 10px;
+    padding-right: 10px;
+    input, button {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    &__block {
+      &:before {
+        top: 23%;
+        right: 0;
+        z-index: -1;
+      }
+    }
+  }
+
+  .footer {
+    &__bottom {
+
+    }
+    &__rights {
+      margin-bottom: 20px;
+    }
+    &__rights, &__socials {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+
+@media screen and (max-width: $screen-small) {
+  .hero {
+    overflow-y: hidden;
+  }
+  .hero-content__title {
+    font-size: $fsH1Title*0.6;
+  }
+  .hero__phone .phone-link {
+    font-size: $fsLinks;
+  }
+  .our-story {
+    &__content {
+      &:before {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+    &__title {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .reservation {
+    &__block {
+      &:before {
+        display: none;
+      }
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.reservation {
+
+  &__block {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 92px;
+    &:before {
+      content: url('../img/tomato_r.png');
+      position: absolute;
+      top: 29%;
+      right: 7.5%;
+    }
+    &:after {
+      content: url('../img/waffle.png');
+      position: absolute;
+      left: 3%;
+      bottom: -15%;
+    }
+  }
+  &__header {
+    text-align: center;
+  }
+  &__suptitle {
+    @include sup-title-style;
+  }
+  &__title {
+    @include h3-title-style;
+    margin-bottom: 54px;
+  }
+
+}
+.reservation-form {
+  max-width: 784px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  &__body {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input, button {
+      width: 48.6%;
+      margin-bottom: 25px;
+    }
+    input {
+      padding: 21px;
+      border: 1px solid $inputBorderColor;
+      border-radius: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    // span input label
+    span {
+      position: relative;
+      label {
+        position: absolute;
+        left: 21px;
+        top: 21px;
+      }
+      input {
+        width: 100%;
+        color: transparent;
+        &:focus {
+          color: black;
+        }
+      }
+      & + input:focus label {
+        color: transparent;
+      }
+    }
+
+
+  }
+  &__btn {
+    color: $primaryBgColor;
+    background-color: $titleColor;
+    border-radius: $inputBtnBorderRadius;
+    border: none;
+    font-weight: bold;
+    padding: 24px;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $titleColor;
+      color: $primaryColor;
+    }
+  }
+}

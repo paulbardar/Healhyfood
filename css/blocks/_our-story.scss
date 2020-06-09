@@ -1,0 +1,73 @@
+.our-story {
+  padding-top: 137px;
+  padding-bottom: 92px;
+  position: relative;
+  &:before {
+    content: url('../img/berry1.png');
+    position: absolute;
+    left: 5.5%;
+    top: 26%;
+  }
+  &:after {
+    content: url('../img/berry-top.png');
+    position: absolute;
+    top: -4%;
+    right: 10.5%;
+    z-index: -1;
+  }
+  &__content {
+    max-width: 1033px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    &:before {
+      content: url('../img/whole-orange.png');
+      position: absolute;
+      left: 5%;
+      bottom: -51%;
+    }
+    &:after {
+      content: url('../img/berry-bottom.png');
+      position: absolute;
+      bottom: -2%;
+      right: 8.5%;
+    }
+  }
+  &__sup-title {
+    font-size: 41.67px;
+    line-height: 1.1;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    position: relative;
+    z-index: 1;
+    font-size: $fsH2title;
+    letter-spacing: 6px;
+    color: $titleColor;
+    margin-bottom: 39px;
+    line-height: 0.9;
+    &:after {
+      content: url('../img/orange.png');
+      position: absolute;
+      right: -8%;
+      bottom: -42%;
+      z-index: -1;
+    }
+  }
+  &__text {
+    margin-bottom: 54px;;
+  }
+  &__button {
+    font-size: $fsLinks;
+    font-weight: bold;
+    padding: 15px 39px;
+    letter-spacing: 2.67px;
+    text-decoration: none;
+    color: $primaryColor;
+    border-color: $btnBorderColor;
+  }
+}
